@@ -6,4 +6,12 @@
 // 161 -> да
 
 
+Console.Clear();
+Console.WriteLine("Введите целое число:");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Multiplicity(number));
 
+bool Multiplicity(int number)
+{
+    return (number % 7 == 0) && (number % 23 == 0);
+}
