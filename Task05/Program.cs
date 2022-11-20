@@ -5,17 +5,13 @@
         Console.Clear();
         Console.WriteLine("Введите число");
         int NumberA = Convert.ToInt32(Console.ReadLine());
-        int NumberB = 2;
-        int count = 0;
-        if (NumberA % NumberB == 0)
-        {
-            while (count<NumberA);
-            {
-            Console.Write(count+"");
-            count++;
-            }
-        }
-
-
-
-    
+        int i = 0;
+        while (i<=NumberA)
+         {
+           Console.Write(i+" ");
+           i+=2;  
+         }
+        if (NumberA % 2 == 0 )
+           {
+            Console.WriteLine("Чётное");
+           }
