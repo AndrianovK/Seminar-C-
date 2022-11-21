@@ -1,2 +1,27 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// int n = 12345;
+// double res = Math.Sqrt(n);
+
+// double n1 = 5.099985645;
+// double nRound = Math.Round(n1, 2, MidpointRounding.ToZero); ФОРМУЛА !!!!!!!!!!!!!!!!!!
+
+
+
+// Задача 18: Напишите программу, которая по
+// заданному номеру четверти, показывает диапазон
+// возможных координат точек в этой четверти (x и y).
+
+Console.Write("Укажите номер четверти: ");
+string quarter = Console.ReadLine();
+
+string Range(string quarter1)
+{
+if (quarter1 == "1") return "x > 0 и y > 0";
+if (quarter1 == "2") return "x < 0 и y > 0";
+if (quarter1 == "3") return "x < 0 и y < 0";
+if (quarter1 == "4") return "x > 0 и y < 0";
+return "Введеные неверные данные";
+}
+
+string range = Range(quarter);
+
+Console.WriteLine(range);
