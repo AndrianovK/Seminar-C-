@@ -20,4 +20,4 @@ int Summa(int a)
 }
 if (a < 0) a = - a;
 int summa = Summa(a);
-Console.WriteLine($"Сумма цифр числа {a} ---> {summa}");
+Console.WriteLine($" ---> {summa}");
